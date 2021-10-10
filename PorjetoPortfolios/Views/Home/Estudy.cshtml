@@ -1,0 +1,30 @@
+﻿@model List<PorjetoPortfolios.Models.ImagemDosCursos>
+
+@{
+    ViewData["Title"] = "Estudy";
+}
+
+
+
+<h1>Cursos Concluídos</h1>
+<h3>Lista dos cursos concluidos!</h3>
+<h5>Todos são links para os cursos em sua plataforma</h5>
+
+
+
+@foreach (var item in Model)
+{
+    <a href="@item.LinkCurso"> <img class="img-produto-carrossel" src="~/images/cursosFeitos/curso@(item.Codigo).PNG" /> </a>
+}
+
+<hr />
+
+<h1>Curso em Andamento</h1>
+<h3>Lista do curso em Andamento!</h3>
+<h5>Links para os cursos em sua plataforma</h5>
+
+<div>
+    <a href="#"> <img class="img-produto-carrossel" src="~/images/cursosAndamento/curso20.PNG" /> </a>
+    <a href="#"> <img class="img-produto-carrossel" src="~/images/cursosAndamento/curso21.PNG" /> </a>
+    <a href="#"> <img class="img-produto-carrossel" src="~/images/cursosAndamento/curso22.PNG" /> </a>
+</div>

@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Entre em contato";
+    ViewData["Message"] = "Podemos trabalhar juntos.";
+}
+
+<h1 style="margin-bottom: -20px; margin-top: 8%;">@ViewData["Title"]</h1>
+<h3>@ViewData["Message"]</h3>
+
+<br />
+<br />
+
+<address>
+    <p>
+        Zona Norte, São Paulo <br />
+        Avenida Massão Watanabe, 254 <br />
+        Celular: (11)94917-1522 <br />
+    </p>
+</address>
+
+<address>
+    <strong>Gmail:</strong> <a href="mailto:lucas.arsza@gmail.com">lucas.arsza@gmail.com</a><br />
+    <strong>Outlook:</strong> <a href="mailto:lucas.arsza@outlook.com">lucas.arsza@outlook.com</a><br />
+    <strong>WhatsApp:</strong>
+    <a href="https://api.whatsapp.com/send?phone=5511949171522&text=Ol%C3%A1%2C%20Lucas!%20Vi%20seu%20portf%C3%B3lio.%20Podemos%20conversar%3F">
+        (11)94917-1522
+    </a><br />
+</address>
+
+<hr />
+
+<a href="/Home/ErroEmail">Email bloqueado! Por favor, não usar o formulario por enquanto. Estou estudando sobre!</a>
+
+<br />
+<br />
+
+
+<div class="EmailNome">
+
+    <form class="formularioEmail">
+        <div class="EmailNome">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Endereço de email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Seu nome</label>
+                <input type="text" class="form-control" placeholder="Seu nome">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Escreva sua mensagem aqui. ">Mensagem</label>
+            <textarea type="text" class="form-control" placeholder="Sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <div class="qrcode">
+        <label for="exampleInputEmail1">QRCode WhatsApp</label>
+        <img src="~/images/foto/QRCode WhatsApp.PNG" alt="QRCode WhatsApp" />
+    </div>
+</div>
+
+<hr />
+
+<h1 style="margin-top: 25px;">Onde estou localizado</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.909293448052!2d-46.6689957844778!3d-23.463736163880654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef75e1f32f617%3A0xf71faa6bc70720cb!2sAv.%20Masao%20Watanabe%2C%20254%20-%20Jardim%20Santa%20Cruz%20(Zona%20Norte)%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002672-000!5e0!3m2!1spt-PT!2sbr!4v1633384611486!5m2!1spt-PT!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
